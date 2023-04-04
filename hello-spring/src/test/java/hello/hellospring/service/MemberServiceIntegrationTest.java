@@ -50,7 +50,7 @@ class MemberServiceIntegrationTest {
         member2.setName("spring");
 
         // when
-
+        memberService.join(member1);
 
         // then
         IllegalStateException e = assertThrows(IllegalStateException.class, () -> memberService.join(member2));
